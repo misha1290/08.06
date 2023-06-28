@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body{
+  background-image: url(./School_council.jpg);
+  background-position: 100% 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.logo{
+  background-image: url(./Bt-logoonly.png);
+  margin: 30px auto;
+  width: 174px;
+  height: 123px;
+  background-size: cover;
+  animation: pulse 2s infinite;
+}
+.sidzune{
+  background-image: url(./shizu_cross_angry.png);
+  width: 295px;
+  height: 600px;
+  background-size: cover;
+  animation: slide 1s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  bottom: 0;
+  right: 300px;
+}
+.sidzune:hover{
+  background-image: url(./shizu_behind_smile.png);
+}
+.misha{
+  background-image: url(./misha_hips_frown.png);
+  width: 295px;
+  height: 600px;
+  background-size: cover;
+  animation: slide-in 1s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  bottom: 0;
+  left: 300px;
+}
+.misha:hover{
+  background-image: url(./misha_sign_smile.png);
+}
+.slova{
+  background-image: url(https://avatanplus.com/files/resources/original/574ae7d80459e154fc99a3d2.png);
+  width: 200px;
+  height: 182.5px;
+  position: fixed;
+  bottom: 450px;
+  left: 450px;
+  background-size: cover;
+  text-align: center;
+  font-size: 27px;
+  opacity: 0;
+}
+.misha:hover + .slova{
+  animation: fade-in 1s forwards;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
